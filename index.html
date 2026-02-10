@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Edwin Lindblom - CV</title>
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #353535; /* Jet */
+            background-color: #d9d9d9; /* Platinum */
+            padding: 30px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cv-container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff; /* White */
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        header {
+            background-color: #284b63; /* Indigo Dye */
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            color: #ffffff; /* White */
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .section {
+            padding: 20px 30px;
+            border-bottom: 1px solid #d9d9d9; /* Platinum */
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #3c6e71; /* Caribbean Current */
+            margin-bottom: 15px;
+            font-size: 22px;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 8px;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #3c6e71; /* Caribbean Current */
+        }
+        h3 {
+            font-size: 18px;
+            color: #284b63; /* Indigo Dye */
+            margin: 15px 0 5px;
+        }
+        .job-title {
+            font-weight: bold;
+            display: block;
+            color: #3c6e71; /* Caribbean Current */
+        }
+        .date {
+            color: #5e5e5e;
+            font-style: italic;
+            margin-bottom: 8px;
+            display: block;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+        }
+        li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #3c6e71; /* Caribbean Current */
+        }
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin: 15px 0 8px;
+            color: #284b63; /* Indigo Dye */
+            display: block;
+        }
+        footer {
+            background-color: #f5f5f5;
+            padding: 20px 30px;
+            text-align: center;
+        }
+        .print-note {
+            font-size: 14px;
+            color: #5e5e5e;
+            margin-top: 10px;
+        }
+        a {
+            color: #284b63;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media print {
+            body {
+                padding: 0;
+                background-color: white;
+            }
+            .cv-container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            .print-note {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header>
+            <h1>EDWIN LINDBLOM</h1>
+            <div class="contact-info">
+                <div>📌 Gustavsbergsgatan 2</div>
+                <div>📌 431 37 Mölndal</div>
+                <div>📱 0793586814</div>
+                <div>✉️ edwmad0323@gmail.com</div>
+                <div>🎂 1994-03-23</div>
+                <div>🚗 B‑Körkort: Ja</div>
+            </div>
+        </header>
+
+
+        <section class="section">
+            <h2>PROFIL</h2>
+            <p>Målmedveten och nyfiken utvecklare under utbildning inom objektorienterad programmering och AI. Jag trivs med att ta idéer till fungerande lösningar och kombinerar maskininlärning, API‑utveckling och god kodstruktur med noggrannhet och problemlösning från tidigare roller. Fascinerad av hur teknologi kan lösa komplexa problem, allt från AI‑agenter till rymdutforskning.</p>
+        </section>
+
+
+        <section class="section">
+            <h2>UTBILDNING</h2>
+
+
+            <h3>Objektorienterad programmering med AI‑inriktning | Handelsakademin, Göteborg</h3>
+            <span class="date">Augusti 2024 – Pågående</span>
+            <ul>
+
+                <li><strong>AI & ML:</strong> AI‑intro, ML‑koncept, regression och klassificering</li>
+                <li><strong>Algoritmer:</strong> Linjär/Logistisk regression, k‑NN, Random Forest</li>
+                <li><strong>Datavalidering:</strong> Pydantic, OOP för data</li>
+                <li><strong>API/Backend:</strong> FastAPI (basics, datapipelines, model serving)</li>
+                <li><strong>RAG & Vektordatabaser:</strong> RAG‑system, LanceDB, konversations‑AI</li>
+                <li><strong>AI‑agenter:</strong> Design och orkestrering, PydanticAI, MCP (Model Context Protocol)</li>
+                <li><strong>Moln & DevOps:</strong> Azure Functions/Web Apps, Docker, Docker Compose, deployment</li>
+                <li><strong>Arbetssätt:</strong> Git/GitHub, testning, agila metoder, packaging med UV</li>
+            </ul>
+
+
+            <h3>Engelska 6 | Campus Mölndal (distans)</h3>
+            <span class="date">Mars 2024 – Maj 2024</span>
+
+
+            <h3>Programmering 1 | Hermods (distans)</h3>
+            <span class="date">Mars 2024 – Maj 2024</span>
+            <ul>
+                <li>Grundläggande C# med fokus på struktur, logik och problemlösning</li>
+            </ul>
+
+
+            <h3>Personbilsmekaniker | Motorbranschens Tekniska Gymnasium</h3>
+            <span class="date">2010 – 2013</span>
+        </section>
+
+
+        <section class="section">
+            <h2>PRAKTIK (LIA)</h2>
+
+
+            <h3>Lärande i arbete 2 | Chalmers IT, Göteborg</h3>
+            <span class="date">Februari 2026 – Maj 2026</span>
+            <ul>
+                <li>Praktik på IT-avdelningen vid Chalmers Tekniska Högskola</li>
+                <li>Arbete med pipelines och IT-system i akademisk miljö</li>
+            </ul>
+
+
+            <h3>Lärande i arbete 1 | InFiNetCode AB, Göteborg</h3>
+            <span class="date">Oktober 2025 – December 2025</span>
+            <ul>
+                <li>Software studio specialiserat på clean code och software craftsmanship</li>
+                <li>Arbete med modern mjukvaruutveckling och agila arbetssätt</li>
+            </ul>
+        </section>
+
+
+        <section class="section">
+            <h2>PROJEKT</h2>
+
+
+            <h3>Tandreda – AI-driven medicinsk transkription för tandvård</h3>
+            <span class="date">Pågående (SaaS-utveckling)</span>
+            <p>MDR Klass I-certifierad applikation för svenska tandvårdsmottagningar som konverterar ljudinspelningar från patientbesök till strukturerade SOEP-journalanteckningar med AI.</p>
+            <ul>
+                <li><strong>Backend:</strong> Flask med SSR (Jinja2), Gunicorn med gevent workers</li>
+                <li><strong>Task processing:</strong> Celery + Redis (ElastiCache) för asynkron ljudbearbetning</li>
+                <li><strong>AI/STT:</strong> Azure AI Foundry (Sweden Central för GDPR-compliance) med GPT-4 och speech-to-text</li>
+                <li><strong>Infrastruktur:</strong> AWS (ECS Fargate, RDS PostgreSQL, S3), CloudFormation IaC</li>
+                <li><strong>Säkerhet:</strong> Flask-Login med MFA, GDPR-automatisk radering av ljudfiler efter processing</li>
+                <li><strong>Deployment:</strong> Docker med Supervisord (Flask + Celery worker + beat i samma container)</li>
+            </ul>
+            <p><strong>Webbplats:</strong> <a href="https://tandreda.se" target="_blank" rel="noopener">tandreda.se</a></p>
+        </section>
+
+
+        <section class="section">
+            <h2>ARBETSLIVSERFARENHET</h2>
+
+
+            <h3>Vaktmästare | Göteborgs Stad (Stadsbiblioteket)</h3>
+            <span class="date">Maj 2022 – Februari 2024 (Deltid)</span>
+            <ul>
+                <li>Praktisk problemlösning och teknisk support för bibliotekets personal</li>
+                <li>Logistikhantering av bokförflyttningar mellan biblioteksgrenar</li>
+                <li>Säkerställde smidig drift genom förebyggande underhåll och snabba lösningar</li>
+            </ul>
+
+
+            <h3>Konsult | Randstad</h3>
+            <span class="date">Oktober 2020 – Augusti 2024</span>
+            <p>Ambulerande konsult i olika uppdrag med fokus på produktion, lager och teknisk support.</p>
+
+
+            <h3>Monteringstekniker | Volvo Cars (Pilot Plant)</h3>
+            <span class="date">Augusti 2020 – Oktober 2020</span>
+            <ul>
+                <li>Arbete med prototypfordon i utvecklingsmiljö</li>
+                <li>Samarbete med ingenjörsteam för testning av nya fordonsteknologier</li>
+            </ul>
+
+
+            <h3>Teknisk support | TechBuddy (Part of BuddyCompany)</h3>
+            <span class="date">Augusti 2018 – December 2019</span>
+            <ul>
+                <li>On-site teknisk support och felsökning för telekommunikationsutrustning</li>
+                <li>Kundvägledning och installation av elektronik och hemtjänster</li>
+            </ul>
+
+
+            <h3>Kvalitetsinspektör | Din Bil (Volkswagen)</h3>
+            <span class="date">November 2014 – December 2018</span>
+            <ul>
+                <li>Förleveransinspektioner för att säkerställa fordon uppfyllde specifikationer</li>
+                <li>Kvalitetssäkring och processförbättring med fokus på kundnöjdhet</li>
+            </ul>
+
+
+            <h3>Lagermedarbetare | Din Bil (Volkswagen)</h3>
+            <span class="date">Juli 2014 – November 2014</span>
+            <ul>
+                <li>Lagerhantering och optimering av reservdelsflöden</li>
+                <li>Inventariesystem och logistikkoordinering</li>
+            </ul>
+        </section>
+
+
+        <section class="section">
+            <h2>KOMPETENSER</h2>
+            <div class="skills-container">
+                <div>
+                    <span class="section-title">TEKNISKA FÄRDIGHETER</span>
+                    <ul>
+                        <li><strong>Programmering:</strong> Python (pandas, scikit‑learn, Flask, Celery), C#</li>
+                        <li><strong>Backend & API:</strong> FastAPI, Flask, Pydantic, REST</li>
+                        <li><strong>ML:</strong> Regression, klassificering, k‑NN, Random Forest</li>
+                        <li><strong>Data & Databaser:</strong> PostgreSQL, SQL, DuckDB, LanceDB (vektordb), Redis</li>
+                        <li><strong>AI-agenter:</strong> PydanticAI, MCP, RAG-system, Azure AI</li>
+                        <li><strong>Moln & DevOps:</strong> AWS (ECS, RDS, S3, CloudFormation), Azure, Docker, Docker Compose</li>
+                        <li><strong>Versionshantering:</strong> Git, GitHub</li>
+                        <li><strong>Arbetssätt:</strong> Testning, kodgranskning, Scrum/Kanban, GDPR-compliance</li>
+                    </ul>
+
+
+                    <span class="section-title">ÖVRIGA IT‑KUNSKAPER</span>
+                    <ul>
+                        <li>Windows, Microsoft 365 (Word, Excel, PowerPoint, Outlook)</li>
+                        <li>Grundläggande nätverk och felsökning av hårdvara/mjukvara</li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <span class="section-title">PERSONLIGA EGENSKAPER</span>
+                    <ul>
+                        <li>Analytisk problemlösare med nyfiken inställning till ny teknik</li>
+                        <li>Kommunikativ lagspelare som ställer frågor vid oklarheter</li>
+                        <li>Noggrann, självgående och ansvarstagande</li>
+                        <li>Snabb anpassning till nya system och miljöer</li>
+                    </ul>
+
+
+                    <span class="section-title">SPRÅK</span>
+                    <ul>
+                        <li>Svenska – Modersmål</li>
+                        <li>Engelska – Flytande i tal och skrift</li>
+                    </ul>
+
+
+                    <span class="section-title">CERTIFIERINGAR</span>
+                    <ul>
+                        <li>B‑körkort</li>
+                        <li>Traverscertifikat</li>
+                        <li>Härdplastcertifiering</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <h2>LÄNKAR</h2>
+            <ul>
+                <li><strong>GitHub:</strong> <a href="https://github.com/TonalLobster" target="_blank" rel="noopener">github.com/TonalLobster</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/edwin-lindblom" target="_blank" rel="noopener">linkedin.com/in/edwin-lindblom</a></li>
+                <li><strong>Tandreda:</strong> <a href="https://tandreda.se" target="_blank" rel="noopener">tandreda.se</a></li>
+            </ul>
+        </section>
+
+
+        <footer>
+            <h2>REFERENSER</h2>
+            <ul>
+                <li>Christoffer Almeida, Teamledare Volkswagen – 076‑309 47 05</li>
+                <li>Olof Wadell, Chef Vaktmästare Stadsbiblioteket – 072‑229 43 15</li>
+            </ul>
+            <p class="print-note">Tack för ni tog er tid att läsa igenom mitt CV :)!</p>
+        </footer>
+    </div>
+</body>
+</html>
